@@ -1,3 +1,5 @@
+# Fork from CuPy source repo https://github.com/cupy/cupy/tree/master/examples/gemm
+
 from __future__ import division
 
 import argparse
