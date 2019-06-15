@@ -1,5 +1,6 @@
-import cupy as cp
+# Fork from CuPy source repo https://github.com/cupy/cupy/tree/master/examples/gemm
 
+import cupy as cp
 
 def read_code(code_filename, params):
     with open(code_filename, 'r') as f:
