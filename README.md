@@ -2,7 +2,7 @@
 
 CuPy SGEMM (Single precision GEneral Matrix Multiplication) test by comparing numpy.dot, cupy.dot and cupy with handwrite cuda kernel
 
-Assuming Python3.7 is already install with package numpy openblas (or numpy with intel mkl) and cupy6.0
+Assuming Python3.7 is already installed with package numpy openblas (or numpy with intel mkl) and cupy6.0
 
 ### The Output
 
