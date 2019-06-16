@@ -14,9 +14,9 @@ m=30 n=40 k=20
 start benchmarking
 
 =============================Result===============================
-mklBLAS             time 0.008236799947917461 ms
-hand written kernel time 0.1871103972196579 ms
-cuBLAS              time 0.02953599989414215 ms
+mklBLAS             time 0.0041728000156581405 ms
+hand written kernel time 0.10469760000705719 ms
+cuBLAS              time 0.01585279982537031 ms
 
 ~/$python sgemm.py --gpu 0 --m 3840 --n 5120 --k 2560
 m=3840 n=5120 k=2560
@@ -36,9 +36,9 @@ m=30 n=40 k=20
 start benchmarking
 
 =============================Result===============================
-mklBLAS             time 0.0053311999887228016 ms
-hand written kernel time 0.1417279988527298 ms
-cuBLAS              time 0.03205120004713535 ms
+mklBLAS             time 0.00802559992298484 ms
+hand written kernel time 0.6085696190595626 ms
+cuBLAS              time 0.041068799793720245 ms
 
 ~/$python sgemm.py --gpu 0 --m 3840 --n 5120 --k 2560
 m=3840 n=5120 k=2560
