@@ -1,4 +1,4 @@
-# CuPyFirstExample
+# CuPy First Example
 
 CuPy SGEMM (Single precision GEneral Matrix Multiplication) test by comparing numpy.dot, cupy.dot and cupy with handwrite cuda kernel
 
