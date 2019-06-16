@@ -18,6 +18,9 @@ mklBLAS             time 0.0041728000156581405 ms
 hand written kernel time 0.10469760000705719 ms
 cuBLAS              time 0.01585279982537031 ms
 
+```
+
+```
 ~/$python sgemm.py --gpu 0 --m 3840 --n 5120 --k 2560
 m=3840 n=5120 k=2560
 start benchmarking
@@ -40,6 +43,9 @@ mklBLAS             time 0.00802559992298484 ms
 hand written kernel time 0.6085696190595626 ms
 cuBLAS              time 0.041068799793720245 ms
 
+```
+
+```
 ~/$python sgemm.py --gpu 0 --m 3840 --n 5120 --k 2560
 m=3840 n=5120 k=2560
 start benchmarking
