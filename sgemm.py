@@ -1,5 +1,3 @@
-# Fork from CuPy source repo https://github.com/cupy/cupy/tree/master/examples/gemm
-
 from __future__ import division
 
 import argparse
@@ -85,10 +83,10 @@ def main():
 
         for _ in range(3):
             np.dot(cp.asnumpy(A), cp.asnumpy(B))
-        mklblas_times = benchmark(np.dot, (cp.asnumpy(A), cp.asnumpy(B)), n_run=5)
+        blas_times = benchmark(np.dot, (cp.asnumpy(A), cp.asnumpy(B)), n_run=5)
 
     print('=============================Result===============================')
-    print('mklBLAS             time {} ms'.format(np.mean(mklblas_times)))
+    print('BLAS                time {} ms'.format(np.mean(blas_times)))
     print('hand written kernel time {} ms'.format(np.mean(kernel_times)))
     print('cuBLAS              time {} ms'.format(np.mean(cublas_times)))
 
