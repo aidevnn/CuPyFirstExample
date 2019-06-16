@@ -4,13 +4,21 @@ CuPy SGEMM (Single precision GEneral Matrix Multiplication) test by comparing nu
 
 Assuming Python3.7 is already install with package numpy-mkl and cupy6.0
 
+### The Output
+
+On my laptop with CPU i7-7500U-2.90GHz (4 threads) and GPU NVIDIA-730MX
+
 ```
+~/$python sgemm.py --gpu 0 --m 30 --n 40 --k 20
+m=30 n=40 k=20
+start benchmarking
+
+=============================Result===============================
+mklBLAS             time 0.008236799947917461 ms
+hand written kernel time 0.1871103972196579 ms
+cuBLAS              time 0.02953599989414215 ms
+
 ~/$python sgemm.py --gpu 0 --m 3840 --n 5120 --k 2560
-```
-
-will produce on my laptop with CPU i7-7500U-2.90GHz (4 threads) and GPU NVIDIA-730MX
-
-```
 m=3840 n=5120 k=2560
 start benchmarking
 
@@ -20,9 +28,19 @@ hand written kernel time 337.38600463867186 ms
 cuBLAS              time 150.9483612060547 ms
 ```
 
-will produce on Google Colab with CPU Intel-Xeon(R)-2.30GHz (2 threads) and GPU NVIDIA-TeslaK80
+On Google Colab with CPU Intel-Xeon(R)-2.30GHz (2 threads) and GPU NVIDIA-TeslaK80
 
 ```
+~/$python sgemm.py --gpu 0 --m 30 --n 40 --k 20
+m=30 n=40 k=20
+start benchmarking
+
+=============================Result===============================
+mklBLAS             time 0.0053311999887228016 ms
+hand written kernel time 0.1417279988527298 ms
+cuBLAS              time 0.03205120004713535 ms
+
+~/$python sgemm.py --gpu 0 --m 3840 --n 5120 --k 2560
 m=3840 n=5120 k=2560
 start benchmarking
 
