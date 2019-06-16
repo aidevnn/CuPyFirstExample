@@ -14,7 +14,7 @@ m=30 n=40 k=20
 start benchmarking
 
 =============================Result===============================
-mklBLAS             time 0.0041728000156581405 ms
+BLAS             time 0.0041728000156581405 ms
 hand written kernel time 0.10469760000705719 ms
 cuBLAS              time 0.01585279982537031 ms
 
@@ -26,7 +26,7 @@ m=3840 n=5120 k=2560
 start benchmarking
 
 =============================Result===============================
-mklBLAS             time 677.8629272460937 ms
+BLAS             time 677.8629272460937 ms
 hand written kernel time 337.38600463867186 ms
 cuBLAS              time 150.9483612060547 ms
 ```
@@ -39,7 +39,7 @@ m=30 n=40 k=20
 start benchmarking
 
 =============================Result===============================
-mklBLAS             time 0.00802559992298484 ms
+BLAS             time 0.00802559992298484 ms
 hand written kernel time 0.6085696190595626 ms
 cuBLAS              time 0.041068799793720245 ms
 
@@ -51,7 +51,7 @@ m=3840 n=5120 k=2560
 start benchmarking
 
 =============================Result===============================
-mklBLAS             time 1416.2935302734375 ms
+BLAS             time 1416.2935302734375 ms
 hand written kernel time 54.31614608764649 ms
 cuBLAS              time 22.128262329101563 ms
 ```
