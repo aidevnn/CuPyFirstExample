@@ -4,6 +4,8 @@ CuPy SGEMM (Single precision GEneral Matrix Multiplication) test by comparing nu
 
 Assuming Python3.7 is already installed with package numpy openblas (or numpy with intel mkl) and cupy6.0
 
+Used code is from CuPy source repo https://github.com/cupy/cupy/tree/master/examples/gemm
+
 ### The Output
 
 On my laptop with CPU i7-7500U-2.90GHz (4 threads) and GPU NVIDIA-730MX
