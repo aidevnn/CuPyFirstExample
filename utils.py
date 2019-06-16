@@ -1,4 +1,4 @@
-# Fork from CuPy source repo https://github.com/cupy/cupy/tree/master/examples/gemm
+# Code from CuPy source repo https://github.com/cupy/cupy/tree/master/examples/gemm
 
 import cupy as cp
 
